@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "units",
+  "info": {
+    "singularName": "unit",
+    "pluralName": "units",
+    "displayName": "Unit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "units"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "units"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

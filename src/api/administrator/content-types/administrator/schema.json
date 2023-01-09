@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "administrators",
+  "info": {
+    "singularName": "administrator",
+    "pluralName": "administrators",
+    "displayName": "Administrator",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "administrators"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "administrator"
+    }
+  }
+}

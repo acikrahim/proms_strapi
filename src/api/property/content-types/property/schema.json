@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "units": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::unit.unit",
+      "mappedBy": "property"
+    },
+    "administrators": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::administrator.administrator",
+      "mappedBy": "property"
+    },
+    "facility": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::facility.facility",
+      "mappedBy": "property"
+    }
+  }
+}

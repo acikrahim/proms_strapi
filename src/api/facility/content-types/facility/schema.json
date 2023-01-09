@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facilities",
+  "info": {
+    "singularName": "facility",
+    "pluralName": "facilities",
+    "displayName": "Facility",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property",
+      "inversedBy": "facility"
+    },
+    "facilities": {
+      "type": "dynamiczone",
+      "components": [
+        "facilities.hall"
+      ]
+    }
+  }
+}

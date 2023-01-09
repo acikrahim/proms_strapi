@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_facilities_halls",
+  "info": {
+    "displayName": "Hall",
+    "icon": "trophy"
+  },
+  "options": {},
+  "attributes": {
+    "facility_type": {
+      "type": "enumeration",
+      "enum": [
+        "just_hall",
+        "hall_with_court"
+      ]
+    }
+  }
+}
