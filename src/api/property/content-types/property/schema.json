@@ -32,6 +32,27 @@
       "relation": "oneToOne",
       "target": "api::facility.facility",
       "mappedBy": "property"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "capacity": {
+      "type": "biginteger"
+    },
+    "tags": {
+      "type": "json"
     }
   }
 }
